@@ -1101,30 +1101,7 @@ h4 {
     width: 140px;
     height: 1px;
     position: relative;
-}
-
-.price-line, .price-line::before, .price-line::after {
-    background: #afafaf;
-}
-
-.price-line::before {
-    position: absolute;
-    width: 70px;
-    height: 1px;
-    content: "";
-    bottom: -6px;
-    left: 50%;
-    margin-left: -35px;
-}
-
-.price-line::after {
-    position: absolute;
-    width: 70px;
-    height: 1px;
-    content: "";
-    top: -6px;
-    left: 50%;
-    margin-left: -35px;
+    background-color: white;
 }
 
 .section-head {
@@ -1679,12 +1656,14 @@ ol.tos, ul.tos {
 
 .btn_inventory {
     color: #fbfbff;
-    background: #ea496c;
+    background: #a73d3e;
+    top: 95%;
 }
 
 h1.price-heading {
-    color: #ea496c;
-    font-size: 3.2em;
+    color: white;
+    font-size: 2em;
+    font-weight: 900;
     text-align: center;
     padding-top: 20px;
     line-height: 50px;
@@ -1697,15 +1676,19 @@ h1.price-heading {
 .mb {
     margin-bottom: 50px;
     line-height: 50px;
+    color: #a73d3e;
+    font-size: 2em;
+    font-weight: 900;
+    margin-top: 0px;
 }
 
 /* Pricing Tables */
 .price-table {
-	border: 2px solid #5a5a5a;
-	border-radius: 25px;
-	padding-top: 15px;
 	padding-bottom: 25px;
 	margin: 5px;
+    background: #fbfbff;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
 }
 
 .price-table .p-head {
@@ -1715,15 +1698,22 @@ h1.price-heading {
 	text-transform: uppercase;
 	line-height: 80px;
 	border-bottom: 2px solid #ccc;
-    color: #ea496c;
+    color: #a73d3e;;
+    background-color: black;
 }
 
 .price-table .p-body .features li {
 	color: #333333;
-	border-bottom: 2px solid #ccc;
-	padding: 24px 0px;
+	padding: 5px 0px;
 	margin: 0;
 	letter-spacing: 1px;
+}
+
+.hr-price-table {
+   width: 90%;
+   color: #4a4a4a;
+    margin: 0 auto;
+    
 }
 
 .p-body .price  {
@@ -1736,14 +1726,23 @@ h1.price-heading {
 	font-size: 45px;
 	margin-left: 10px;
 	margin-right: 10px;
+    color: #a73d3e;
 }
 
 .p-body .price .sub {
 	font-size: 18px;
-	color: #ccc;
+	color: #a73d3e;
 	position: relative;
 	bottom: 10px;
 	font-weight: 700;
+}
+
+.year {
+    font-size: 18px;
+	color: #000;
+	position: relative;
+	bottom: 10px;
+	font-weight: 900;
 }
 
 ul.features {
